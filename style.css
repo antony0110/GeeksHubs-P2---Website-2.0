@@ -100,7 +100,6 @@ footer{
 display: flex;
 height: 52px;
 justify-content: center;
-align-items: flex-end;
 background: -moz-linear-gradient(top, rgba(204,0,0,0.23) 0%, rgba(204,0,0,1) 100%); 
 background: -webkit-linear-gradient(top, rgba(204,0,0,0.23) 0%,rgba(204,0,0,1) 100%);
 background: linear-gradient(to bottom, rgba(204,0,0,0.23) 0%,rgba(204,0,0,1) 100%); 
@@ -116,5 +115,48 @@ color: whitesmoke;
 text-shadow:-2px 2px 8px rgb(7, 12, 14);
 
 }
+.padre{
+    display: flex;
+    margin: 10px;
+    align-items: center;
 
 
+
+}
+
+.tienda,.tienda2 { 
+     margin: 30px;
+     min-width: 500px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+&:before, &::after{
+content: "";
+position: absolute;
+width: calc(100% - 30px);
+height: 4px;
+background: #fff;
+transition: all ,3s;
+}
+&::before{left: -100px; top: 10px;}
+&::after{left: 100px; bottom: 10px;}
+
+&:hover:before, &:hover:after{
+    left: 15;
+}
+
+.text, .text2 {
+    text-align: center;
+    width: 440px;
+    position: absolute;
+}
+   
+ p{
+    font-family: fantasy;
+    color: rgb(0, 0, 0);
+    text-shadow:-2px 2px 8px rgb(255, 255, 255);
+    padding: 10px 20px;
+
+}
