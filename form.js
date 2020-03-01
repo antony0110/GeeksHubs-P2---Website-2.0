@@ -13,5 +13,16 @@ for (var i =0; i < inputs.length; i++) {
     }
   //Pedir Permiso de conocer Ubicación
       
+  if('geolocation' in navigator){
+    console.log('Servicio activo');
     
+    navigator.geolocation.getCurrentPosition(function(posicion){
+    console.log("Posición Latitude->"+ posicion.coords.latitude+" Posición  Longitude ->"+posicion.coords.longitude, " Posición  Altitude ->"+posicion.coords.altitude);
+    },function(error){
+     console.log("Error ->"+ error);
+  })}else{
+    console.log('Servicio inactivo');
+  }
+  
+  
       
