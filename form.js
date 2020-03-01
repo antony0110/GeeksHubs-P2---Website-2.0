@@ -1,3 +1,6 @@
+
+//Formulario 
+
 var inputs = document.getElementsByClassName('formulario__input');
 for (var i =0; i < inputs.length; i++) {
     inputs[i].addEventListener('keyup',function(){
@@ -8,3 +11,7 @@ for (var i =0; i < inputs.length; i++) {
             }
             });
     }
+  //Pedir Permiso de conocer Ubicación
+      
+    
+      

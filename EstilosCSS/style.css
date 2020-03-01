@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+/*Plantilla paginas*/
 video {
     position: fixed;
     min-width: 100%;
@@ -16,7 +16,16 @@ video {
     z-index: -3;
     opacity: 4;
 }
-
+main {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 90vh;
+}
+/*Estilos Redes Sociales*/
 .Social-Bar {
     position: fixed;
     right: 0;
@@ -27,7 +36,7 @@ video {
     align-items: flex-end;
     z-index: 100;
 }
-
+/*Los iconos tienes sus propias fuetes y su propia hoja de estilos*/
 .icon {
     color: white;
     text-decoration: none;
@@ -65,16 +74,6 @@ video {
     transition-duration: 1s;
 }
 
-main {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    width: 100%;
-    height: 90vh;
-}
-
 img {
     margin: 33px;
     width: 400px;
@@ -107,7 +106,7 @@ div a:hover {
     box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
     transition-duration: 1s;
 }
-
+/*El degradado ha sido cogido de una pagina web externa, esta : www.degradadoHtml.com/*/
 footer {
     display: flex;
     height: 52px;
@@ -129,42 +128,25 @@ footer {
 
 }
 
-
+/*Sobre Nostros*/
 .tienda {
     margin: 30px;
     min-width: 500px;
-    width: 30%;
+    width: 70%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 
 }
-
-&:before,
-&::after {
-    content: "";
-    position: absolute;
-    width: calc(100% - 30px);
-    height: 4px;
-    background: #fff;
-    transition: all, 3s;
-}
-
-&::before {
-    left: -100px;
-    top: 10px;
-}
-
-&::after {
-    left: 100px;
-    bottom: 10px;
-}
-
-&:hover:before,
-&:hover:after {
-    left: 15;
-}
-
+.marca{
+width: 20%;
+height: 50%;
+border-radius: 3px;
+align-items: center;
+}   
+    
 .text {
     text-align: center;
     width: 440px;
@@ -177,7 +159,7 @@ p {
     text-shadow: -2px 2px 8px rgb(255, 255, 255);
     padding: 10px 20px;
 }
-
+/*Pagina de contacto*/
 .formulario {
     width: 400px;
     background: -moz-linear-gradient(top, rgba(204, 0, 0, 0.23) 0%, rgba(204, 0, 0, 1) 100%);
@@ -235,6 +217,7 @@ margin-top: -100px;
     cursor: pointer;
     border:none;
 }
+/*Pagina de Juegos*/
 .fijar{
     margin-top:-100px ;
 }
