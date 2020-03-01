@@ -238,3 +238,28 @@ margin-top: -100px;
 .fijar{
     margin-top:-100px ;
 }
+.last, .fortnite, .god{
+  width: 300px;
+  height: 449px;
+  margin: 2px;
+}
+.portafolio{
+    width: 90%;
+    max-width:1400px;
+    margin: auto;
+}
+.portafolio-container{
+    display: flex;
+    justify-content: space-between;
+}
+.portafolio-item{
+    
+    position: relative;
+}
+.portafolio-text{
+position: absolute;
+bottom: 0;
+padding: 20px;
+background: rgba(0, 0, 0, 0.7);
+color:#fff;
+}
